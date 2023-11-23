@@ -8,7 +8,7 @@ class Simulator:
         self.data = data
     
     def simulate_game(self, team_a, team_b):
-        goals_team_a, goals_team_b = self.get_goals(team_a, team_b, 1900)
+        goals_team_a, goals_team_b = self.get_goals(team_a, team_b, 2010)
         predicted_a_goal = stats.mode(np.random.poisson(goals_team_a.mean(), 100000))
         predicted_b_goal = stats.mode(np.random.poisson(goals_team_b.mean(), 100000))
 
