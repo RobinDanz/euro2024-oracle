@@ -1,5 +1,6 @@
 import numpy as np
 import itertools
+from scipy import stats
 
 class Simulator:
     def __init__(self, groups: list, data):
